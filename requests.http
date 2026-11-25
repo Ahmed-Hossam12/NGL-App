@@ -1,0 +1,17 @@
+### Register
+POST http://localhost:3000/auth/register
+Content-type: application/json
+
+{
+  "name": "Ahmed",
+  "email": "ahmedhossam24356@gmail.com",
+  "password": "12345"
+}
+### Verfiy
+PATCH http://localhost:3000/auth/verify-account
+Content-Type: application/json
+
+{
+  "email": "ahmedhossam24356@gmail.com",
+  "code": "259891"
+}
